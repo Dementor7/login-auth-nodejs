@@ -8,7 +8,9 @@ const dotenv = require('dotenv');
 dotenv.config();
 // new test update second update for pull request webhooks 
 app.use(express.json()); // Parse JSON request bodies
-app.use(cors()); // cross orign resorce sharing
+app.use(cors()); // cross orign resorce sharing test 
+
+
 
 app.use("/api", router)
 app.get('/', authMiddleware, (req, res) => {
